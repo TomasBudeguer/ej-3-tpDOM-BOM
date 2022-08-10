@@ -36,31 +36,46 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
               </li>
+            </ul>
           </div>
         </div>
       </nav>
     </header>
     <main>
-        <section class="container my-2" id="sectionPadre">
-            <form class="my-3">
-                <div class="mb-3">
-                  <label for="tarea" class="form-label">Nombre de la tarea</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="tarea"
-                    placeholder="Ej: DOM y BOM"
-                    maxlength="30"
-                    minlength="2"
-                    required
-                  />
-                </div>
-                <button type="button" class="btn btn-warning" onclick="agregarTarea()">Agregar tarea</button>
-                <button type="button" class="btn btn-danger" onclick="eliminarTarea()">Eliminar tarea</button>
-              </form>
-        </section>
+      <section class="container my-2" id="sectionPadre">
+        <form class="my-3">
+          <div class="mb-3">
+            <label for="tarea" class="form-label">Nombre de la tarea</label>
+            <input
+              type="text"
+              class="form-control"
+              id="tarea"
+              placeholder="Ej: DOM y BOM"
+              maxlength="30"
+              minlength="2"
+              required
+            />
+          </div>
+          <button
+            type="button"
+            class="btn btn-warning"
+            onclick="agregarTarea()"
+          >
+            Agregar tarea
+          </button>
+          <button
+            type="button"
+            class="btn btn-danger"
+            onclick="eliminarTarea()"
+          >
+            Eliminar tarea
+          </button>
+        </form>
+      </section>
     </main>
     <footer class="bg-dark text-light text-center py-4">
       <p>&copy; Todos los derechos reservados</p>
